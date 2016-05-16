@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>shenhaihua</title>
-  <meta name="description" content="随时记录学习工作中的点滴心得
-">
+  <title>rails form有错误信息时生成class为field_with_errors的div，如何解决？</title>
+  <meta name="description" content="在application.rb文件里面加入以下配置即可">
   <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2016/05/16/field_with_errors-rails.html">
   <link rel="alternate" type="application/rss+xml" title="shenhaihua" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -49,26 +48,23 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">我的笔记</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">rails form有错误信息时生成class为field_with_errors的div，如何解决？</h1>
+    <p class="post-meta"><time datetime="2016-05-16T23:16:20+08:00" itemprop="datePublished">May 16, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <a class="post-link" href="/2016/05/16/field_with_errors-rails.html">rails form有错误信息时生成class为field_with_errors的div，如何解决？</a>
-        <p><span class="post-meta">May 16, 2016</span></p>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/2016/05/15/gulp-demo.html">使用gulp构建项目(demo)</a>
-        <p><span class="post-meta">May 15, 2016</span></p>
-      </li>
-    
-  </ul>
+  <div class="post-content" itemprop="articleBody">
+    <p>在application.rb文件里面加入以下配置即可</p>
 
-
+<div class="highlighter-rouge"><pre class="highlight"><code>config.action_view.field_error_proc = proc {|html, instance| html }
+</code></pre>
 </div>
+
+  </div>
+
+</article>
 
       </div>
     </div>
