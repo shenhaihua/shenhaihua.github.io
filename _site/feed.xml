@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-05-23T02:44:34+08:00</updated><id>/</id><title>shenhaihua</title><subtitle>hi,这是我的学习工作生活笔记，我比较懒，可能不会经常记。。。</subtitle><entry><title>Markdown语法记录</title><link href="/markdown-syntax/" rel="alternate" type="text/html" title="Markdown语法记录" /><published>2016-05-22T00:00:00+08:00</published><updated>2016-05-22T00:00:00+08:00</updated><id>/markdown-syntax</id><content type="html" xml:base="/markdown-syntax/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-06-16T01:30:01+08:00</updated><id>/</id><title>shenhaihua</title><subtitle>hi,这是我的学习工作生活笔记，我比较懒，可能不会经常记。。。</subtitle><entry><title>关于父容器设置了overflow:hidden,绝对定位的元素显示情况</title><link href="/positon-overflow/" rel="alternate" type="text/html" title="关于父容器设置了overflow:hidden,绝对定位的元素显示情况" /><published>2016-06-16T00:00:00+08:00</published><updated>2016-06-16T00:00:00+08:00</updated><id>/positon-overflow</id><content type="html" xml:base="/positon-overflow/">&lt;p&gt;今天写样式的时候，发现父容器定义了&lt;code class=&quot;highlighter-rouge&quot;&gt;overflow:hidden;position:relative;&lt;/code&gt;子元素的绝对定位超出父容器的部分会被裁剪。&lt;/p&gt;
+
+&lt;p&gt;没有设置&lt;code class=&quot;highlighter-rouge&quot;&gt;position:relative;&lt;/code&gt;的情况&lt;/p&gt;
+
+&lt;div style=&quot;width:200px;height:200px;overflow:hidden;border:solid 1px red;&quot;&gt;
+	我没有设置position
+	&lt;div style=&quot;position:absolute;left:300px;bottom:-100px;width:200px;height:200px;border:solid 1px blue;&quot;&gt;我是绝对定位!父容器是红色的框框。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;设置&lt;code class=&quot;highlighter-rouge&quot;&gt;position:relative;&lt;/code&gt;的情况&lt;/p&gt;
+
+&lt;div style=&quot;width:200px;height:200px;overflow:hidden;border:solid 1px red;position: relative;&quot;&gt;
+	我没有设置position
+	&lt;div style=&quot;position:absolute;left:100px;bottom:-100px;width:200px;height:200px;border:solid 1px blue;&quot;&gt;我是绝对定位!父容器是红色的框框。&lt;/div&gt;
+&lt;/div&gt;</content><category term="css" /><summary>今天写样式的时候，发现父容器定义了overflow:hidden;position:relative;子元素的绝对定位超出父容器的部分会被裁剪。</summary></entry><entry><title>Markdown语法记录</title><link href="/markdown-syntax/" rel="alternate" type="text/html" title="Markdown语法记录" /><published>2016-05-22T00:00:00+08:00</published><updated>2016-05-22T00:00:00+08:00</updated><id>/markdown-syntax</id><content type="html" xml:base="/markdown-syntax/">&lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;https://github.com/younghz/Markdown&quot;&gt;Markdown语法参考&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
