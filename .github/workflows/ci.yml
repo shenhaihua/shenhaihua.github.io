@@ -18,7 +18,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     # Runs a single command using the runners shell
     - name: Install and Build
@@ -31,5 +34,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.5.9
       with:
         GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
+        BASE_BRANCH: master
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: build # The folder the action should deploy.
