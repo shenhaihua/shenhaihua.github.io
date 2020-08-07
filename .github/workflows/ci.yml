@@ -19,9 +19,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+      uses: actions/checkout@master
 
     # Runs a single command using the runners shell
     - name: Install and Build
@@ -31,9 +29,9 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.5.9
+      uses: JamesIves/github-pages-deploy-action@master
       with:
         GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
-        BASE_BRANCH: master
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
+        FOLDER: dist # The folder the action should deploy.
+        BUILD_SCRIPT: yarn install && yarn build
